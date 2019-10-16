@@ -1,0 +1,76 @@
+@import'common.scss';
+@import'myscss.scss';
+* {
+    @include sizing;
+}
+
+.wrap {
+    @include num(100%, 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    @include num(100%, pr(50px));
+    background: #46D265;
+    color: #fff;
+    font-size: pr(24px);
+    @include flex;
+    padding: 0 pr(14px);
+    .icon {
+        font-size: pr(18px);
+    }
+    b {
+        flex-basis: pr(15px);
+        height: 100%;
+    }
+}
+
+section {
+    flex: 1;
+    overflow: hidden;
+    @include flex;
+    .s-left {
+        flex: 9;
+        height: 100%;
+        .l-cont {
+            flex: 1;
+            padding-left: pr(20px);
+            >li {
+                width: 100%;
+                padding-top: pr(20px);
+                span {
+                    display: block;
+                    @include num(100%, auto);
+                    @include flex(flex-start);
+                    font-size: pr(20px);
+                    background: #999;
+                }
+                .city_list {
+                    @include num(100%, auto);
+                    li {
+                        padding: pr(10px) 0;
+                        font-size: pr(18px);
+                        border-bottom: 1px solid #ccc;
+                        position: relative;
+                        z-index: 999;
+                    }
+                }
+            }
+        }
+    }
+    .s-right {
+        flex: 1;
+        height: 100%;
+        @include flex;
+        flex-direction: column;
+        padding: pr(10px) 0;
+        color: #46D265;
+        li {
+            width: 100%;
+            flex: 1;
+            font-size: pr(18px);
+            @include flex(center);
+        }
+    }
+}

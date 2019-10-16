@@ -1,0 +1,42 @@
+[{
+    "img": "images/6.png",
+    "tit": "北京首都国际酒店",
+    "rush": true,
+    "pirce": "￥268",
+    "grade": "4.3分",
+    "rank": "四星级",
+    "wifi": true,
+    "site": ["首都机场、", "新国展"],
+    "distance": "23.2公里"
+
+}, {
+    "img": "images/6.png",
+    "tit": "武汉热干面十分好吃",
+    "pirce": "￥398",
+    "rush": false,
+    "wifi": false,
+    "grade": "4.3分",
+    "rank": "高档型",
+    "site": ["马甸、", "安贞、", "科技馆"],
+    "distance": "10.6公里"
+}, {
+    "img": "images/6.png",
+    "tit": "日本樱花欢迎来参观",
+    "pirce": "￥330",
+    "rush": false,
+    "wifi": false,
+    "grade": "4.3分",
+    "rank": "高档型",
+    "site": ["马甸、", "安贞、", "科技馆"],
+    "distance": "10.6公里"
+}, {
+    "img": "images/6.png",
+    "tit": "韩婷大特惠双十一",
+    "rush": true,
+    "pirce": "￥560",
+    "grade": "4.3分",
+    "rank": "四星级",
+    "wifi": true,
+    "site": ["首都机场、", "新国展"],
+    "distance": "23.2公里"
+}]

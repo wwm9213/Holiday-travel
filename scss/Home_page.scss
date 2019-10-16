@@ -1,0 +1,164 @@
+@import'common.scss';
+@import'myscss.scss';
+* {
+    @include sizing;
+}
+
+.wrap {
+    @include num(100%, 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    @include num(100%, pr(50px));
+    background: #46D264;
+    color: #fff;
+    @include flex;
+    align-items: flex-end;
+    padding: 0 pr(20px);
+    padding-bottom: pr(10px);
+    span {
+        font-size: pr(18px);
+    }
+    b {
+        font-size: pr(25px);
+    }
+    u {
+        flex-basis: pr(36px);
+        height: 100%;
+    }
+}
+
+section {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    .s-cont {
+        width: 100%;
+        .banner {
+            @include num(100%, pr(150px));
+            .swiper-wrapper {
+                .swiper-slide {
+                    @include num(100%, 100%);
+                }
+            }
+        }
+        .scrollbar {
+            @include num(100%, pr(5px));
+            background: #ccc;
+            @include flex;
+            li {
+                flex: 1;
+                height: 100%;
+            }
+            li.active {
+                background: #46D264;
+            }
+        }
+        .hotel-list {
+            @include num(100%, auto);
+            dl {
+                @include num(100%, pr(120px));
+                display: flex;
+                border-bottom: 1px solid #CCC;
+                padding: 0 pr(15px);
+                dd {
+                    flex: 2;
+                    @include flex(center);
+                    img {
+                        @include num(pr(75px), pr(75px));
+                    }
+                }
+                dt {
+                    flex: 8;
+                    @include flex;
+                    padding: pr(15px) 0 pr(15px) pr(15px);
+                    .d-left {
+                        @include num(100%, 100%);
+                        flex: 9;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        .d-tit {
+                            font-size: pr(16px);
+                            color: #000;
+                        }
+                        .d-rush {
+                            @include num(100%, auto);
+                            @include flex;
+                            span {
+                                &:nth-child(1) {
+                                    color: #fff;
+                                    padding: pr(3px) pr(3px);
+                                    background: #FF9800;
+                                    font-size: pr(14px);
+                                }
+                                &:nth-child(2) {
+                                    color: #FF9800;
+                                    font-size: pr(18px);
+                                    b {
+                                        font-size: pr(16px);
+                                        color: #B2B2B2;
+                                    }
+                                }
+                            }
+                        }
+                        .d-star-level {
+                            @include num(100%, auto);
+                            @include flex(flex-start);
+                            span {
+                                margin-right: pr(10px);
+                                font-size: pr(14px);
+                                color: #B2B2B2;
+                                .icon {
+                                    font-size: pr(14px);
+                                    color: #B2B2B2;
+                                }
+                            }
+                        }
+                        .d-distance {
+                            @include num(100%, auto);
+                            @include flex;
+                            span {
+                                font-size: pr(14px);
+                                color: #B2B2B2;
+                                .icon {
+                                    font-size: pr(14px);
+                                    color: #B2B2B2;
+                                    margin-right: pr(5px);
+                                }
+                            }
+                        }
+                    }
+                    .d-right {
+                        flex: 1;
+                        @include num(100%, 100%);
+                        @include flex(center);
+                    }
+                }
+            }
+        }
+        .s-load,
+        .s-refresh {
+            @include num(100%, pr(50px));
+            background: #FF9800;
+            @include cen(pr(50px));
+            font-size: pr(18px);
+            color: #fff;
+            position: absolute;
+            left: 0;
+        }
+        .s-refresh {
+            top: pr(-50px);
+        }
+        .s-load {
+            bottom: pr(-50px);
+        }
+    }
+}
+
+.none {
+    visibility: hidden;
+}
